@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILM FINDER</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5dd8690974.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="film-image">
+
+        <nav class="film-nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <span class="nav__title">FilmFinder</span>
+                </div>
+            
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">Home</a></li>
+                    <li><a href="#" class="nav__link">Movies</a></li>
+                    <li><a href="#" class="nav__link nav__link--primary">Contact</a></li>
+                </ul>    
+            </div>
+        </nav>
+
+        <img class="film__image" src="assets-film/moviefilm.png" alt="Film image">
+
+    </div>
+
+    <header class="film-content">
+        <h1>Welcome to Film Finder</h1>
+        <p> Discover popular movies and find your next favorite film</p>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="controls">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+                <option value="default">Default</option>
+                <option value="az">A-Z</option>
+                <option value="za"> Z-A</option>
+                <option value="year-new">Year (Newest)</option>
+                <option value="year-old">Year (Oldest)</option>
+            </select>
+        </div>
+    </header>
+
+    <section id="movies-container" class="movie-grid"></section>
+
+    <footer>
+        <p>Built by Vanessa Avila • Powered by OMDb</p>
+    </footer>
+
+<script src="index.js"></script>
+</body>
+</html>
+
